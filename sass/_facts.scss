@@ -1,0 +1,127 @@
+.section-facts {
+    background-image: -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        from(rgba($color-black, 0.9)), 
+        to(rgba($color-black, 0.9))
+    ), 
+    url(../img/sectionfacts-1d.jpg);
+    background-image: linear-gradient(
+        rgba($color-black, 0.9), 
+        rgba($color-black, 0.9)
+    ), 
+    url(../img/sectionfacts-1d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    @media only screen and (max-width: 65.63em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.9)), 
+            to(rgba($color-black, 0.9))
+        ), 
+        url(../img/sectionfacts-small-1d.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.9), 
+            rgba($color-black, 0.9)
+        ), 
+        url(../img/sectionfacts-small-1d.jpg);
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 65.63em), only screen and (min-resolution: 192dpi) and (min-width: 65.63em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.9)), 
+            to(rgba($color-black, 0.9))
+        ), 
+        url(../img/sectionfacts.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.9), 
+            rgba($color-black, 0.9)
+        ), 
+        url(../img/sectionfacts.jpg);
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 65.63em), only screen and (min-resolution: 192dpi) and (max-width: 65.63em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.9)), 
+            to(rgba($color-black, 0.9))
+        ), 
+        url(../img/sectionfacts-small.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.9), 
+            rgba($color-black, 0.9)
+        ), 
+        url(../img/sectionfacts-small.jpg);
+    }
+
+    @media only screen and (max-width: 50em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.9)), 
+            to(rgba($color-black, 0.9))
+        );
+        background-image: linear-gradient(
+            rgba($color-black, 0.9), 
+            rgba($color-black, 0.9)
+        )
+    }
+}
+
+.fact-box {
+    width: 100%;
+    background-image: -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        from(rgba($color-black, 0.7)), 
+        to(rgba($color-black, 0.7)));
+    background-image: linear-gradient(
+        rgba($color-black, 0.7), 
+        rgba($color-black, 0.7));
+    padding: 2rem 1.5rem;
+
+    @include clearfix;
+
+    @media only screen and (max-width: $bp-medium) {
+        text-align: center;
+    }
+
+    &__icon {
+        display: inline-block;
+        float: left;
+        font-size: 7.5rem;
+        margin-right: 1.5rem;
+        color: $color-primary-light;
+
+        @media only screen and (max-width: $bp-medium) {
+            float: none;
+            margin: 0;
+        }
+    }
+
+    &__info {
+        float: left;
+
+        @media only screen and (max-width: $bp-medium) {
+            float: none;
+        }
+
+        &--number {
+            font-size: 4rem;
+        }
+
+        &--text {
+            font-size: 2rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                display: block;
+            }
+        }
+    }
+}

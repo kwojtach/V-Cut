@@ -1,0 +1,63 @@
+.section-membership {
+    background-color: $color-grey-dark;
+}
+
+.plan-card {
+    background-color: $color-grey-dark-3;
+    padding-bottom: 3rem;
+    -webkit-box-shadow: 0 1rem 2rem rgba($color-black,.9);
+            box-shadow: 0 1rem 2rem rgba($color-black,.9);
+
+    &__title {
+        background-color: $color-grey-light;
+        font-size: 3.5rem;
+        color: $color-grey-dark;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    &__stars {
+        font-size: 3rem;
+        color: $color-primary-light;
+    }
+
+    &__price {
+        font-size: 6rem;
+        text-align: center;
+        padding: 1rem 0;
+
+        &--month {
+            font-size: 3rem;
+        }
+    }
+
+    &__features {
+        list-style: none;
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 0 3rem;
+        }
+
+        &--item {
+            font-size: 2.5rem;
+            padding: 1.5rem 0;
+            border-top: 2px solid $color-grey-dark-2;
+            padding-left: 2rem;
+
+            &:last-child {
+                line-height: 2;
+                border-bottom: 2px solid $color-grey-dark-2;
+            }
+        }
+
+        &--icon {
+            font-size: 2rem;
+            color: $color-primary-light;
+            margin-right: .7rem;
+        }
+    }
+
+    &__button {
+        text-align: center;
+    }
+}

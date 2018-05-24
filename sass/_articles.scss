@@ -1,0 +1,138 @@
+.section-articles {
+    background-color: $color-grey-dark;
+}
+
+.article-box {
+    position: relative;
+    background-color: $color-grey-light;
+    -webkit-box-shadow: 0 1rem 2rem rgba($color-black,.9);
+            box-shadow: 0 1rem 2rem rgba($color-black,.9);
+
+    &__picture {
+        height: 35rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+                clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: -webkit-gradient(
+                linear, 
+                left top, left bottom, 
+                from(rgba($color-black, 0.6)), 
+                to(rgba($color-black, 0.6))
+            ), 
+            url(../img/article1-1d.jpg);
+            background-image: linear-gradient(
+                rgba($color-black, 0.6), 
+                rgba($color-black, 0.6)
+            ), 
+            url(../img/article1-1d.jpg);
+            background-size: cover;
+            background-position: center;
+
+            @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+                background-image: -webkit-gradient(
+                    linear, 
+                    left top, left bottom, 
+                    from(rgba($color-black, 0.6)), 
+                    to(rgba($color-black, 0.6))
+                ), 
+                url(../img/article1.jpg);
+                background-image: linear-gradient(
+                    rgba($color-black, 0.6), 
+                    rgba($color-black, 0.6)
+                ), 
+                url(../img/article1.jpg);
+            }
+        }
+        
+        &--2 {
+            background-image: -webkit-gradient(
+                linear, 
+                left top, left bottom, 
+                from(rgba($color-black, 0.6)), 
+                to(rgba($color-black, 0.6))
+            ), 
+            url(../img/article2-1d.jpg);
+            background-image: linear-gradient(
+                rgba($color-black, 0.6), 
+                rgba($color-black, 0.6)
+            ), 
+            url(../img/article2-1d.jpg);
+            background-size: cover;
+            background-position: center;
+
+            @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+                background-image: -webkit-gradient(
+                    linear, 
+                    left top, left bottom, 
+                    from(rgba($color-black, 0.6)), 
+                    to(rgba($color-black, 0.6))
+                ), 
+                url(../img/article2.jpg);
+                background-image: linear-gradient(
+                    rgba($color-black, 0.6), 
+                    rgba($color-black, 0.6)
+                ), 
+                url(../img/article2.jpg);
+            }
+        }
+        
+        &--3 {
+            background-image: -webkit-gradient(
+                linear, 
+                left top, left bottom, 
+                from(rgba($color-black, 0.6)), 
+                to(rgba($color-black, 0.6))
+            ), 
+            url(../img/article3-1d.jpg);
+            background-image: linear-gradient(
+                rgba($color-black, 0.6), 
+                rgba($color-black, 0.6)
+            ), 
+            url(../img/article3-1d.jpg);
+            background-size: cover;
+            background-position: center;
+
+            @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+                background-image: -webkit-gradient(
+                    linear, 
+                    left top, left bottom, 
+                    from(rgba($color-black, 0.6)), 
+                    to(rgba($color-black, 0.6))
+                ), 
+                url(../img/article3.jpg);
+                background-image: linear-gradient(
+                    rgba($color-black, 0.6), 
+                    rgba($color-black, 0.6)
+                ), 
+                url(../img/article3.jpg);
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 20rem;
+        left: 8rem;
+        z-index: 20;
+
+        @media only screen and (max-width: $bp-small) {
+            left: 15%;
+        }
+    }
+
+    &__text {
+        color: $color-grey-dark;
+        padding: 0 3rem 3rem 3rem;
+
+        &--title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        &--description {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.heading-primary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    display: inline-block;
+    border: 2px solid $color-grey-light;
+    border-radius: 2px;
+    padding: .6rem;
+}
+
+.heading-secondary {
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    margin: 4rem 0;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 5.2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 4rem;
+        letter-spacing: .2rem;
+        margin: 1rem 0;
+    }
+}
+
+.heading-tertiary {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 3rem;
+        letter-spacing: .1rem;
+    }
+}
+
+.paragraph {
+    font-size: 2rem;
+    margin: 5rem 0;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    width: 45rem;
+    background-image: -webkit-gradient(
+        linear, 
+        left top, right top, 
+        from(rgba($color-primary-light, 0)), 
+        color-stop(rgba($color-primary-light, 0.75)), 
+        to(rgba($color-primary-light, 0)));
+    background-image: linear-gradient(
+        to right, 
+        rgba($color-primary-light, 0), 
+        rgba($color-primary-light, 0.75), 
+        rgba($color-primary-light, 0));
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.btn { 
+    &,
+    &:link,
+    &:visited {
+        letter-spacing: .2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        color: $color-grey-light;
+        outline: none;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-red {
+    &,
+    &:link,
+    &:visited {
+        background-color: $color-primary-light; 
+        font-size: 1.7rem;
+        padding: 2.5rem 3.5rem;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}
+
+.btn-white {
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.5rem;
+        padding: 2rem 4.5rem;
+        border: 2px solid $color-grey-light;
+        text-align: center;
+    } 
+
+    &:hover {
+        background-color: $color-primary-light;
+        border-color: $color-primary-light;
+    }
+}
+
+.btn-icon {
+    &,
+    &:link,
+    &:visited {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color: $color-primary-light;
+        line-height: 5rem;
+        text-align: center;
+        vertical-align: center;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}

@@ -1,0 +1,168 @@
+.header {
+    height: 100vh;
+    background-image: -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        from(rgba($color-black, 0.6)), 
+        to(rgba($color-black, 0.6))
+    ), 
+    url(../img/hero-1d.jpg);
+    background-image: linear-gradient(
+        rgba($color-black, 0.6), 
+        rgba($color-black, 0.6)
+    ), 
+    url(../img/hero-1d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    @media only screen and (max-width: 50em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.6)), 
+            to(rgba($color-black, 0.6))
+        ), 
+        url(../img/hero-small-1d.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.6), 
+            rgba($color-black, 0.6)
+        ), 
+        url(../img/hero-small-1d.jpg);
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 50em), only screen and (min-resolution: 192dpi) and (min-width: 50em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.6)), 
+            to(rgba($color-black, 0.6))
+        ), 
+        url(../img/hero.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.6), 
+            rgba($color-black, 0.6)
+        ), 
+        url(../img/hero.jpg);
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 50em), only screen and (min-resolution: 192dpi) and (max-width: 50em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.6)), 
+            to(rgba($color-black, 0.6))
+        ), 
+        url(../img/hero-small.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.6), 
+            rgba($color-black, 0.6)
+        ), 
+        url(../img/hero-small.jpg);
+    }
+
+    &__text-box {
+        @include absCenter;
+
+        width: 114rem;
+
+        & * {
+            -webkit-animation: moveIn 1s ease-out;
+                    animation: moveIn 1s ease-out;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 90%;
+        }
+    }
+}
+
+.navigation {
+    background-color: $color-black;
+    width: 100vw;
+    height: 8rem;
+    position: fixed;
+    z-index: 99999;
+
+    @include clearfix;
+
+    &__logo {
+        float: left;
+        margin-top: -2rem;
+        height: 12rem;
+    }
+
+    &__list {
+        list-style: none;
+        float: right;
+
+        @media only screen and (max-width: $bp-smallest) {
+            float: none;
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        margin-left: 1.7rem;
+        margin-top: 3rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        padding: 2.8rem 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: $color-grey-light;
+        border-bottom: 2px solid transparent;
+        -webkit-transition: border-bottom .2s;
+        transition: border-bottom .2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        border-bottom: 2px solid $color-primary;
+        color: $color-primary;
+    }
+
+    &__mobile-icon {
+        display: none;
+    }
+
+        @media only screen and (max-width: $bp-small) {
+            &__mobile {
+                position: absolute;
+                top: 6.5rem;
+                right: 5rem;
+                background-color: $color-black;
+                text-align: center;
+                display: none;
+
+                &-icon {
+                    display: block;
+                    float: right;
+                    padding: 1.5rem;
+                    cursor: pointer;
+
+                    & i {
+                        font-size: 4rem;
+                    }
+                }
+                
+                & .navigation__item {
+                    display: block;
+                    margin: 0;
+                    padding: 2.5rem 0;
+
+                    &:not(:last-child) {
+                        border-bottom: 2px solid $color-grey-dark-3;
+                    }
+                }
+
+                & .navigation__link:link,
+                & .naigation__link:visited {
+                    padding: 2.5rem 7rem;
+                }
+            }
+        }
+}

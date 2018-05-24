@@ -1,0 +1,120 @@
+.section-features {
+    background-image: -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        from(rgba($color-black, 0.9)), 
+        to(rgba($color-black, 0.9))
+    ), 
+    url(../img/sectionfeatures-1d.jpg);
+    background-image: linear-gradient(
+        rgba($color-black, 0.9), 
+        rgba($color-black, 0.9)
+    ), 
+    url(../img/sectionfeatures-1d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    @media only screen and (max-width: 78.125em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.9)), 
+            to(rgba($color-black, 0.9))
+        ), 
+        url(../img/sectionfeatures-small-1d.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.9), 
+            rgba($color-black, 0.9)
+        ), 
+        url(../img/sectionfeatures-small-1d.jpg);
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 78.125em), only screen and (min-resolution: 192dpi) and (min-width: 78.125em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.9)), 
+            to(rgba($color-black, 0.9))
+        ), 
+        url(../img/sectionfeatures.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.9), 
+            rgba($color-black, 0.9)
+        ), 
+        url(../img/sectionfeatures.jpg);
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 78.125em), only screen and (min-resolution: 192dpi) and (max-width: 78.125em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.9)), 
+            to(rgba($color-black, 0.9))
+        ), 
+        url(../img/sectionfeatures-small.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.9), 
+            rgba($color-black, 0.9)
+        ), 
+        url(../img/sectionfeatures-small.jpg);
+    }
+
+    @media only screen and (max-width: 50em) {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.9)), 
+            to(rgba($color-black, 0.9))
+        );
+        background-image: linear-gradient(
+            rgba($color-black, 0.9), 
+            rgba($color-black, 0.9)
+        )
+    }
+}
+
+.feature-box {
+    background-image: -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        from(rgba($color-black, 0.7)), 
+        to(rgba($color-black, 0.7)));
+    background-image: linear-gradient(
+        rgba($color-black, 0.7), 
+        rgba($color-black, 0.7));
+    width: 100%;
+    text-align: center;
+    height: 27rem;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+
+    @media only screen and (max-width: $bp-smallest) {
+        height: auto;
+        padding-bottom: 1.5rem;
+    }
+
+    &__icon { 
+        font-size: 10rem;
+    }
+
+    &__text {
+        font-size: 3rem;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &:hover {
+        -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+        
+        & icon {
+            color: $color-primary-light;
+        }
+    }
+}

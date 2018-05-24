@@ -1,0 +1,172 @@
+.section-classes {
+    padding: 0;
+
+    @include clearfix;
+}
+
+.class-box {
+    float: left;
+    width: 50%;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 5rem 8rem;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 2.5rem 4rem;
+        }
+    }
+
+    &__item {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+        border-bottom: 2px solid $color-grey-dark;
+    }
+
+    &__date {
+        font-size: 2.5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &__icon {
+        font-size: 4rem;
+        color: $color-primary-light;
+        margin-right: 1rem;
+    }
+
+    &__men {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.7)), 
+            to(rgba($color-black, 0.7))
+        ), 
+        url(../img/classes-men-1d.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.7), 
+            rgba($color-black, 0.7)
+        ), 
+        url(../img/classes-men-1d.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-transition: background-image .2s linear;
+        transition: background-image .2s linear;
+
+        &:hover {
+            background-image: -webkit-gradient(
+                linear, 
+                left top, left bottom, 
+                from(rgba($color-black, 0.6)), 
+                to(rgba($color-black, 0.6))
+            ), 
+            url(../img/classes-men-1d.jpg);
+            background-image: linear-gradient(
+                rgba($color-black, 0.6), 
+                rgba($color-black, 0.6)
+            ), 
+            url(../img/classes-men-1d.jpg);
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+            background-image: -webkit-gradient(
+                linear, 
+                left top, left bottom, 
+                from(rgba($color-black, 0.7)), 
+                to(rgba($color-black, 0.7))
+            ), 
+            url(../img/classes-men.jpg);
+            background-image: linear-gradient(
+                rgba($color-black, 0.7), 
+                rgba($color-black, 0.7)
+            ), 
+            url(../img/classes-men.jpg);
+
+            &:hover {
+                background-image: -webkit-gradient(
+                    linear, 
+                    left top, left bottom, 
+                    from(rgba($color-black, 0.6)), 
+                    to(rgba($color-black, 0.6))
+                ), 
+                url(../img/classes-men.jpg);
+                background-image: linear-gradient(
+                    rgba($color-black, 0.6), 
+                    rgba($color-black, 0.6)
+                ), 
+                url(../img/classes-men.jpg);
+            }
+        }
+    }
+
+    &__women {
+        background-image: -webkit-gradient(
+            linear, 
+            left top, left bottom, 
+            from(rgba($color-black, 0.7)), 
+            to(rgba($color-black, 0.7))
+        ), 
+        url(../img/classes-women-1d.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.7), 
+            rgba($color-black, 0.7)
+        ), 
+        url(../img/classes-women-1d.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-transition: background-image .2s linear;
+        transition: background-image .2s linear;
+
+        &:hover {
+            background-image: -webkit-gradient(
+                linear, 
+                left top, left bottom, 
+                from(rgba($color-black, 0.6)), 
+                to(rgba($color-black, 0.6))
+            ), 
+            url(../img/classes-women-1d.jpg);
+            background-image: linear-gradient(
+                rgba($color-black, 0.6), 
+                rgba($color-black, 0.6)
+            ), 
+            url(../img/classes-women-1d.jpg);
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+            background-image: -webkit-gradient(
+                linear, 
+                left top, left bottom, 
+                from(rgba($color-black, 0.7)), 
+                to(rgba($color-black, 0.7))
+            ), 
+            url(../img/classes-women.jpg);
+            background-image: linear-gradient(
+                rgba($color-black, 0.7), 
+                rgba($color-black, 0.7)
+            ), 
+            url(../img/classes-women.jpg);
+
+            &:hover {
+                background-image: -webkit-gradient(
+                    linear, 
+                    left top, left bottom, 
+                    from(rgba($color-black, 0.6)), 
+                    to(rgba($color-black, 0.6))
+                ), 
+                url(../img/classes-women.jpg);
+                background-image: linear-gradient(
+                    rgba($color-black, 0.6), 
+                    rgba($color-black, 0.6)
+                ), 
+                url(../img/classes-women.jpg);
+            }
+        }
+    }
+}

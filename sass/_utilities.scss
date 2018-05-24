@@ -1,0 +1,10 @@
+.u-margin-top-big { margin-top: 5rem; 
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin-top: 2rem;
+    }
+}
+
+.u-margin-top-medium { margin-top: 3rem; }
+
+.u-center { margin: 0 auto; text-align: center; }
