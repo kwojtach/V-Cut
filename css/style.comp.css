@@ -308,7 +308,7 @@ hr {
         .navigation__mobile .navigation__item:not(:last-child) {
           border-bottom: 2px solid #444; }
       .navigation__mobile .navigation__link:link,
-      .navigation__mobile .naigation__link:visited {
+      .navigation__mobile .navigation__link:visited {
         padding: 2.5rem 7rem; } }
 
 .section-about {
